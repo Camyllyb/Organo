@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://organo.app.com.br",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  }
+}

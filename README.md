@@ -1,45 +1,58 @@
-![Thumbnail](./organo/public/images/thumb.png)
+![Thumbnail](./thumb.png)
 
 # Organo
 
-O Organo é um aplicativo organizador de leituras que permite listar livros, incluindo informações como título, autoria, imagem e gênero literário. Desenvolvido como projeto de estudo no curso de Angular 19 da Alura.
+Organo é um aplicativo para organização de leituras, permitindo listar livros com informações como título, autor, imagem e gênero literário.
 
-## 🔨 Funcionalidades do projeto
+Este projeto foi desenvolvido como parte do curso **Angular 19** da Alura.
 
-`Listagem de livros`: Exibe uma lista de livros, separados por gênero literário, exibindo a imagem e demais informações.
+## 🔨 Funcionalidades
 
-## ✔️ Técnicas e tecnologias utilizadas
+- **Listagem de livros**: Exibe uma lista de livros agrupados por gênero literário, mostrando imagem, título e autor.
+- **Filtro por gênero**: Implementação de condições para exibir apenas livros de um gênero específico quando selecionado, proporcionando uma experiência mais intuitiva para o usuário.
+- **Controle de visibilidade**: Botões para mostrar e ocultar todos os livros simultaneamente.
 
-O desenvolvimento do projeto utilizou as seguintes técnicas e tecnologias:
+## ✔️ Tecnologias e Técnicas Utilizadas
 
-`Angular`: Framework utilizado para construir a aplicação, na versão 19.
+- **Angular 19**: Framework principal para construção da aplicação.
+- **Angular CLI**: Ferramenta para criação e gerenciamento do projeto.
+- **Componentização**: Estrutura modular e reutilizável para melhor organização.
+- **Diretiva ngClass**: Aplicação dinâmica de classes CSS para estilização condicional.
+- **Templates**: Uso de bindings (one-way), eventos e interpolação para interfaces dinâmicas e responsivas.
+- **Controle de fluxo**: Utilização de @if e @for para exibição e iteração de elementos.
+- **Inputs com Signals**: Comunicação eficiente entre componentes utilizando a API de Signals.
 
-`CLI do Angular`: Ferramenta de linha de comando para agilizar a criação e organização do projeto.
+## 📁 Design no Figma
 
-`Componentização`: Estrutura modular e reutilizável que define a base da aplicação.
+Acesse o design do projeto no Figma:
 
-`Diretiva ngClass`: Aplicação de classes CSS dinamicamente para estilização condicional.
+🔗 [Visualizar no Figma](https://www.figma.com/community/file/1459296356400633021)
 
-`Templates`: Utilização de Bindings (one-way), eventos e interpolação para criar interfaces dinâmicas e responsivas.
+## 🛠️ Como rodar o projeto
 
-`Controle de Fluxo`: Uso de @if e @for para controlar a exibição e iteração de elementos na interface.
+### Pré-requisitos
 
-`Inputs com Signals`: Comunicação eficiente entre componentes utilizando a API de Signals.
+- Node.js versão 18 ou superior
+- npm ou yarn
 
-## 📁 Link do Figma
+### Passos
 
-Você pode [acessar o figma do projeto aqui](https://www.figma.com/community/file/1459296356400633021).
-
-## 🛠️ Abrir e rodar o projeto
-
-Você vai precisar do NodeJS, versão 18 ou maior.
-Após baixar o projeto, você precisa instalar as dependências utilizando o comando:
+1. **Instale as dependências**:
 ```bash
 npm install
 ```
-Depois, para executar o projeto em modo desenvolvimento:
+
+2. **Execute o projeto em modo desenvolvimento**:
 ```bash
-ng serve
+npm start
+```
+
+O servidor estará disponível em `http://localhost:4200`
+
+3. **(Opcional) Acesse com a URL customizada**:
+Para acessar através da URL `organo.app.com.br:4200`, adicione a seguinte linha ao seu arquivo `/etc/hosts`:
+```
+127.0.0.1 organo.app.com.br
 ```
 
 ---

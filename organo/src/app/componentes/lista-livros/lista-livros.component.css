@@ -2,3 +2,124 @@
   width: 64px;
   border-bottom: 4px solid var(--color-primaria);
 }
+
+section span {
+  margin-bottom: 32px;
+}
+
+.generos-resumo {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.btn-genero {
+  display: flex;
+  padding: 8px 16px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-genero:hover {
+  transform: translateY(-2px);
+}
+
+.btn-genero.ativo {
+  color: #333;
+}
+
+.btn-genero.romance {
+  color: #0079B3;
+}
+
+.btn-genero.romance.ativo {
+  border-bottom-color: #0079B3;
+  color: #0079B3;
+}
+
+.btn-genero.misterio {
+  color: #5A8C0A;
+}
+
+.btn-genero.misterio.ativo {
+  border-bottom-color: #5A8C0A;
+  color: #5A8C0A;
+}
+
+.btn-genero.fantasia {
+  color: #B83C38;
+}
+
+.btn-genero.fantasia.ativo {
+  border-bottom-color: #B83C38;
+  color: #B83C38;
+}
+
+.btn-genero.ficcao-cientifica {
+  color: #8B3D5C;
+}
+
+.btn-genero.ficcao-cientifica.ativo {
+  border-bottom-color: #8B3D5C;
+  color: #8B3D5C;
+}
+
+.btn-genero.tecnicos {
+  color: #D46700;
+}
+
+.btn-genero.tecnicos.ativo {
+  border-bottom-color: #D46700;
+  color: #D46700;
+}
+
+.contador-livros {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.controles-generos {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.btn-controle {
+  padding: 8px 16px;
+  border: 2px solid var(--color-primaria);
+  border-radius: 16px;
+  background-color: transparent;
+  color: var(--color-primaria);
+  cursor: pointer;
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-controle:hover {
+  background-color: var(--color-primaria);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-expandir:hover {
+  box-shadow: 0 2px 4px rgba(98, 120, 247, 0.3);
+}
+
+.btn-colapsar:hover {
+  box-shadow: 0 2px 4px rgba(98, 120, 247, 0.3);
+}
