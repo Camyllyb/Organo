@@ -22,7 +22,7 @@ export class ListaLivrosComponent implements OnInit {
           if(!this.livrosPorGenero.has(generoId)) {
             this.livrosPorGenero.set(generoId, []);
           }
-          this.livrosPorGenero.get(generoId)?.push(livro); //Operador de operação segura
+          this.livrosPorGenero.get(generoId)?.push(livro);
         });
 
       this.generos = [
@@ -53,18 +53,16 @@ export class ListaLivrosComponent implements OnInit {
       }
       ];
 
-      // Inicializar todos os gêneros como visíveis
+
       this.generos.forEach(genero => {
         this.generosVisibility.set(genero.id, true);
       });
   }
 
   toggleGeneroVisibility(generoId: string) {
-    // Ocultar todos os gêneros
     this.generosVisibility.forEach((_, key) => {
       this.generosVisibility.set(key, false);
     });
-    // Mostrar apenas o gênero clicado
     this.generosVisibility.set(generoId, true);
   }
 
